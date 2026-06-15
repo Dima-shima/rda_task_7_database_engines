@@ -19,7 +19,7 @@ CREATE TABLE GeoIPCache (
     IPRange VARCHAR(50),
     CountryID INT,
     PRIMARY KEY (ID)
-) ENGINE=Memory;
+) ENGINE=Memory MAX_ROWS=1000000;
 
 -- Create a table for storing product descriptions for different countries (Columns: ID, CountryID, ProductID, Description )
 CREATE TABLE ProductDescription (
