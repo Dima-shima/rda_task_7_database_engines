@@ -42,6 +42,5 @@ CREATE TABLE Logs (
 CREATE TABLE ProductReporting (
     Date Date,
     ProductName VARCHAR(50),
-    Orders INT,
-    PRIMARY KEY (Date, ProductName)
+    Orders INT
 ) ENGINE=CSV;
